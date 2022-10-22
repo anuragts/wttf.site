@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import Navbar from '../components/Navbar.astro';
 ---
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navbar/>
 		<slot />
 	</body>
 </html>
@@ -27,6 +29,11 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: 'Chillax', sans-serif;
-		background-color: #F6F6F6;
+		color: #000000;
+		background-color: #ffffff;
+		margin-left: 8rem;
+		margin-right: 8rem;
+		font-size: 25px;
+
 	}
 </style>
